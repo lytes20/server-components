@@ -4,42 +4,47 @@
 
 ## FULL-STACK SOFTWARE ENGINEER
 
-Senior Full-Stack Software Engineer with 7+ years of experience building scalable, high-impact web applications with a focus on performance, user experience, and clean architecture. Proven track record leading end-to-end development using modern frameworks such as Typescript, React, Node.js, and MongoDB, and delivering features that drive user adoption and business growth. Experienced in scaling platforms to support thousands of users and millions of secure transactions, and passionate about solving complex problems to create intuitive, reliable, and high-performing products that people love.
+Python Developer with 7 years of experience designing, implementing, and scaling backend systems,
+RESTful APIs, SOAP APIs, and cloud-native services using Python, Django, Flask, and AWS.
+Experienced across fintech, and enterprise environments, with a proven record of delivering
+secure, high-performance platforms that improve reliability, reduce costs, and scale to large user bases.
+Seeking full-time (W2) or contract roles in backend, frontend, full stack, focusing on scalability, security, and
+measurable business outcomes.
 
 ## CORE SKILLS
 
-**Engineering Skills:** System Design & Architecture, CI/CD, API Design & Integration, Performance Optimization & Scalability, Cloud-based Infrastructure & Deployment, Database Management & Data Modeling, TDD & Automated Testing, Problem Solving & Debugging, Mentorship & Technical Leadership
+**Programming Languages:** Python, JavaScript, TypeScript, Java
 
-**Programming Languages:** JavaScript, TypeScript, Java, Python
+**Backend:** Python (Django, Django Rest Framework, FastAPI, Flask), Node.js, Celery, Kafka, RabbitMQ
 
-**Frontend:** React, Angular, HTML5, CSS, Material UI, Tailwind CSS, Next.js
-
-**Backend:** Node.js, Express, Nestjs, Flask, Django, Spring Boot
+**Frontend:** React, Typescript, Tailwind CSS, Shadcn UI,
 
 **Web Services:** REST, JSON, GraphQL
 
 **Databases:** MongoDB, Postgres, MySQL
 
-**Cloud:** AWS, Heroku, Firebase
+**Cloud:** AWS (EC2, EKS, EBS, EFS, S3, Lambda, CloudFormation, CloudWatch), Heroku, Firebase
 
-**Design Patterns:** MVC, Clean Architecture
+**DevOps:** Docker, Kubernetes, Jenkins, Terraform, Ansible
 
-**Tools:** Git, GitHub, JIRA, Bitbucket, Webpack, Vite, Rollup, Terraform, Docker, Kafka, Expo, Metro, Cursor, Claude
+**Testing and Quality** Pytest, Unit/Integration Testing, Cypress, CI/CD pipelines
+
+**Other Tools:** Git, GitHub, JIRA, Bitbucket, Vite, Cursor, Claude
 
 ## WORK EXPERIENCE
 
-### **RAMANI** _(Y Combinator-backed Fintech)_ Jun 2020 - Feb 2025
+### **RAMANI** _(Y Combinator-backed Fintech)_
 
 **Lead Web Developer** | _Jun 2020 - Feb 2025_
 
 Ramani is a fintech startup building supply chain infrastructure. Led and developed the Sales and Procurement system.
 
-- Led the end-to-end development of a procurement application using React, Node.js, Redis, Firebase, and AWS, enabling distributors, brands, and lenders to process 8,000+ orders worth over $400M USD.
-- Automated the registration of Virtual Fiscal Devices (VFDs) to the Tanzanian Revenue Authority system, a core onboarding component, using React, Node.js, Express, MongoDB, and AWS, reducing customer onboarding time from days to under 1 hour.
+- Led the end-to-end development of a procurement application using React, Python Django, Redis, and AWS, enabling distributors, brands, and lenders to process 8,000+ orders worth over $400M USD.
+- Automated the registration of Virtual Fiscal Devices (VFDs) to the Tanzanian Revenue Authority system, a core onboarding component, using React, Python, and AWS, reducing customer onboarding time from days to under 1 hour.
 - Implemented Error Monitoring across all applications with Sentry and Firebase, reducing error triage time from days to under 30 minutes.
 - Improved API performance by 80% by caching frequent queries with Redis, significantly enhancing system responsiveness for high-volume requests.
-- Delivered core backend and frontend features using React, Express, MongoDB, and PostgreSQL, enabling Ramani to sign 5+ major brands (including Coca-Cola Tanzania) and secure over $7M USD in VC funding.
-- Migrated a production database of 150k+ documents from Firebase Firestore to MongoDB by using Node.js, improving scalability and query flexibility.
+- Delivered core backend and frontend features using React, Python Django, MongoDB, and PostgreSQL, enabling Ramani to sign 5+ major brands (including Coca-Cola Tanzania) and secure over $7M USD in VC funding.
+- Migrated a production database of 150k+ documents from Firebase Firestore to MongoDB using Python, improving scalability and query flexibility.
 - Developed advanced MongoDB aggregation queries powering a reporting tool, enabling customers to visualize sales data and doubling production efficiency for multiple clients.
 - Integrated product analytics using Mixpanel, Hotjar, and Firebase Analytics, enabling data-driven insights into feature usage and user behavior. These insights guided product priorities and improved feature adoption across clients.
 - Developed mobile procurement reporting via WhatsApp using Twilio and React Native, allowing distributors to easily track and manage orders directly through messaging, improving engagement and accessibility for mobile users.
@@ -51,9 +56,9 @@ Ramani is a fintech startup building supply chain infrastructure. Led and develo
 
 Andela is a global talent marketplace that connects top developers with companies as full-time remote team members. Built features for software, maintain software, and fix bugs
 
-- Collaborated with a team of 5 to develop and deploy a full-stack blogging application using Django and React in 12 weeks, resulting in a functional demo used to onboard new engineers in simulation projects.
+- Collaborated with a team of 5 to develop and deploy a full-stack blogging application using Python Django and React in 12 weeks, resulting in a functional demo used to onboard new engineers in simulation projects.
 - Mentored 10 junior developers over a 2-month simulated project, improving their code quality and team communication, leading to all of them getting promoted.
-- Designed and implemented a maintenance and issue-tracking application using Flask and React, streamlining bug reporting workflows and reducing average issue resolution time by 30%.
+- Designed and implemented a maintenance and issue-tracking application using Python Flask and React, streamlining bug reporting workflows and reducing average issue resolution time by 30%.
 - Wrote unit and integration tests using pytest and Jest, maintaining a test coverage of over 85% and reducing regressions during feature releases.
 
 ### FREELANCE
@@ -67,9 +72,9 @@ Senior Software Engineer
 
 ### INDEPENDENT PROJECTS
 
-Diary Entries | [GitHub](https://github.com/lytes20/diary-entries)
+Diary Entries
 
-- A full stack React Native and Node.js application to capture diary entries and summarize them using Al. • Utilized TypeScript, JavaScript, React, Node.js, Express.js, OpenAl, and MongoDB.
+- A full stack React and Node.js application to capture diary entries and summarize them using Al. • Utilized TypeScript, JavaScript, React, Node.js, Express.js, OpenAl, and MongoDB.
 
 ## **EDUCATION**
 

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="gideon-bamuleseyo">GIDEON BAMULESEYO</h1>
+<p><a href="tel:+16412331475">(641) 233-1475</a> | <a href="mailto:gidbamuleseyo@gmail.com">gidbamuleseyo@gmail.com</a> | <a href="https://www.linkedin.com/in/gideon-bamuleseyo-07b574119/">Linkedin</a> | <a href="https://github.com/lytes20">Github</a></p>
+<h2 id="full-stack-software-engineer">FULL-STACK SOFTWARE ENGINEER</h2>
+<p>Python Developer with 7 years of experience designing, implementing, and scaling backend systems,
+RESTful APIs, SOAP APIs, and cloud-native services using Python, Django, Flask, and AWS.
+Experienced across fintech, and enterprise environments, with a proven record of delivering
+secure, high-performance platforms that improve reliability, reduce costs, and scale to large user bases.
+Seeking full-time (W2) or contract roles in backend, frontend, full stack, focusing on scalability, security, and
+measurable business outcomes.</p>
+<h2 id="core-skills">CORE SKILLS</h2>
+<p><strong>Programming Languages:</strong> Python, JavaScript, TypeScript, Java</p>
+<p><strong>Backend:</strong> Python (Django, Django Rest Framework, FastAPI, Flask), Node.js, Celery, Kafka, RabbitMQ</p>
+<p><strong>Frontend:</strong> React, Typescript, Tailwind CSS, Shadcn UI,</p>
+<p><strong>Web Services:</strong> REST, JSON, GraphQL</p>
+<p><strong>Databases:</strong> MongoDB, Postgres, MySQL</p>
+<p><strong>Cloud:</strong> AWS (EC2, EKS, EBS, EFS, S3, Lambda, CloudFormation, CloudWatch), Heroku, Firebase</p>
+<p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Terraform, Ansible</p>
+<p><strong>Testing and Quality</strong> Pytest, Unit/Integration Testing, Cypress, CI/CD pipelines</p>
+<p><strong>Other Tools:</strong> Git, GitHub, JIRA, Bitbucket, Vite, Cursor, Claude</p>
+<h2 id="work-experience">WORK EXPERIENCE</h2>
+<h3 id="ramani-y-combinator-backed-fintech"><strong>RAMANI</strong> <em>(Y Combinator-backed Fintech)</em></h3>
+<p><strong>Lead Web Developer</strong> | <em>Jun 2020 - Feb 2025</em></p>
+<p>Ramani is a fintech startup building supply chain infrastructure. Led and developed the Sales and Procurement system.</p>
+<ul>
+<li>Led the end-to-end development of a procurement application using React, Python Django, Redis, and AWS, enabling distributors, brands, and lenders to process 8,000+ orders worth over $400M USD.</li>
+<li>Automated the registration of Virtual Fiscal Devices (VFDs) to the Tanzanian Revenue Authority system, a core onboarding component, using React, Python, and AWS, reducing customer onboarding time from days to under 1 hour.</li>
+<li>Implemented Error Monitoring across all applications with Sentry and Firebase, reducing error triage time from days to under 30 minutes.</li>
+<li>Improved API performance by 80% by caching frequent queries with Redis, significantly enhancing system responsiveness for high-volume requests.</li>
+<li>Delivered core backend and frontend features using React, Python Django, MongoDB, and PostgreSQL, enabling Ramani to sign 5+ major brands (including Coca-Cola Tanzania) and secure over $7M USD in VC funding.</li>
+<li>Migrated a production database of 150k+ documents from Firebase Firestore to MongoDB using Python, improving scalability and query flexibility.</li>
+<li>Developed advanced MongoDB aggregation queries powering a reporting tool, enabling customers to visualize sales data and doubling production efficiency for multiple clients.</li>
+<li>Integrated product analytics using Mixpanel, Hotjar, and Firebase Analytics, enabling data-driven insights into feature usage and user behavior. These insights guided product priorities and improved feature adoption across clients.</li>
+<li>Developed mobile procurement reporting via WhatsApp using Twilio and React Native, allowing distributors to easily track and manage orders directly through messaging, improving engagement and accessibility for mobile users.</li>
+<li>Led client visits and A/B testing initiatives to gather real-world feedback and validate product hypotheses, resulting in improved user experience and higher feature adoption rates.</li>
+</ul>
+<h3 id="andela"><strong>ANDELA</strong></h3>
+<p><strong>Software Engineer</strong> | <em>Jul 2018 - Mar 2020</em></p>
+<p>Andela is a global talent marketplace that connects top developers with companies as full-time remote team members. Built features for software, maintain software, and fix bugs</p>
+<ul>
+<li>Collaborated with a team of 5 to develop and deploy a full-stack blogging application using Python Django and React in 12 weeks, resulting in a functional demo used to onboard new engineers in simulation projects.</li>
+<li>Mentored 10 junior developers over a 2-month simulated project, improving their code quality and team communication, leading to all of them getting promoted.</li>
+<li>Designed and implemented a maintenance and issue-tracking application using Python Flask and React, streamlining bug reporting workflows and reducing average issue resolution time by 30%.</li>
+<li>Wrote unit and integration tests using pytest and Jest, maintaining a test coverage of over 85% and reducing regressions during feature releases.</li>
+</ul>
+<h3 id="freelance">FREELANCE</h3>
+<p><strong>Australian Settlements Limited</strong> | <em>Nov 2022 - Jan 2023</em>
+Senior Software Engineer</p>
+<ul>
+<li>Developed scalable ETL pipelines using AWS, Terraform and Python to process and settle Direct Entry payment files, ensuring reliable and timely transaction settlements across financial institutions.</li>
+<li>Automated validation of payment files using Python scripts and Regular Expressions, catching 95% of format-related errors before they reach downstream systems and improving file ingestion success rates.</li>
+<li>Optimized data transformations and storage using AWS and Delta Tables, contributing to a 30% reduction in daily processing time for bulk financial data batches.</li>
+</ul>
+<h3 id="independent-projects">INDEPENDENT PROJECTS</h3>
+<p>Diary Entries</p>
+<ul>
+<li>A full stack React and Node.js application to capture diary entries and summarize them using Al. • Utilized TypeScript, JavaScript, React, Node.js, Express.js, OpenAl, and MongoDB.</li>
+</ul>
+<h2 id="education"><strong>EDUCATION</strong></h2>
+<h3 id="maharishi-international-university"><strong>Maharishi International University</strong></h3>
+<p><strong>Master of Science, Computer Science</strong><br>
+<em>Feb 2025 - Present</em><br>
+Fairfield, Iowa, USA</p>
+<h3 id="makerere-university"><strong>Makerere University</strong></h3>
+<p><strong>Bachelor of Science, Computer Science</strong><br>
+<em>Aug 2014 - Jun 2019</em><br>
+Kampala, Uganda</p>
+
+</body>
+</html>

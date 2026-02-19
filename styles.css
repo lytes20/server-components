@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 4px;
+}
 h1 {
   text-align: center;
+}
+
+h1 + p {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid black;
+}
+ul {
+  margin-left: 32px;
+}
+li {
+  list-style-type: disc;
 }
